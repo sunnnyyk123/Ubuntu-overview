@@ -5,9 +5,9 @@
 - [Introduction](#introduction)
 - [Why Ubuntu?](#why-Ubuntu)
 - [What is Ubuntu?](#what-is-Ubuntu)
-- [Key Features of Ubuntu](#key-features-of-Ubuntu)
-- [Getting Started](#getting-started)
-- [Basic Concepts](#basic-concepts)
+- [System Requirement](#System-Requirement)
+- [Pre-requisites](#Pre-requisites)
+- [Installing Ubuntu](#Installing-Ubuntu)
 - [Conclusion](#conclusion)
 - [Author](#author)
 - [References](#references)
@@ -16,101 +16,99 @@
 
 ## Introduction
 
-React.js is a popular open-source JavaScript library for building user interfaces, especially single-page applications where a fast, interactive user experience is needed. It was developed by Facebook and is maintained by Facebook and a community of developers.
+This document provides a structured and easy-to-understand overview of Ubuntu. It explains what Ubuntu is, why it's used, its core features, and how to get started.
 
 ---
 
 ## Why Ubuntu?
 
-- **Popularity & Community Support:** React.js is widely used, with a large community and extensive resources.
-- **Performance:** Utilizes a virtual DOM to optimize and accelerate UI rendering.
-- **Reusable Components:** Encourages modularity and reusability in UI development.
-- **Strong Ecosystem:** Supported by tools, libraries, and integrations for routing, state management, and more.
-- **Backward Compatibility:** React pays special attention to minimizing breaking changes.
+**Free & Open Source** - Ubuntu is completely free to download, use, and share. Its source code is open to everyone, that is allowing users and developers to view, modify, and contribute.
+
+**Secure** - Ubuntu is highly secure. It comes with a built-in firewall (ufw), user privilege management, and gets regular security patches from Canonical.
+
+**Package Management** - Installing, updating, and removing software is easy using Ubuntu package management tools like ```apt``` and ```snap```.
+
+**Community Support** -  Ubuntu has one of the largest and most active open-source communities. if you are stuck with an error or looking for a tutorial, help is available through forums like AskUbuntu, Stack Overflow, and official documentation of ubuntu.
+
+**DevOps & Cloud Ready** - Ubuntu is widely used in cloud environments like AWS, Azure, and GCP. It is ourfirstchoice for running Devops tools like Ansible, Terraform, and Jenkins.
 
 ---
 
 ## What is Ubuntu?
 
-React.js is a JavaScript library for building composable user interfaces based on components. It allows developers to create large web applications that can update and render efficiently in response to data changes.
+Ubuntu is an open-source Linux- based operating system which is developed by canonical Ltd in 2004. Ubuntu is designed to be easy to use, highly secure, and realiable operating system.
 
-React focuses on the "view" layer of the application, making it easy to develop interactive UIs by breaking them into small, reusable pieces called components.
+Ubuntu is widely used in personal computer, server and cloud computing.
+
+---
+## System Requirement
+
+| Requirement         | Minimum          | Recommendation         |
+| :------------------ | :--------------- | :--------------------- |
+| Processor| 2 GHz Dual Core or higher | 2+ GHz Dual Core                   |
+| RAM | 2 GB  | 4 GB or more  |
+| Storage         | 25 GB free hard disk space   | 30+ GB SSD for better performance |
+
+---
+## Pre-requisites
+
+Before using or installing Ubuntu, here are a few basic requirements and things you should be familiar with:
+
+**Basic Computer Knowledge** – Understanding how to use a keyboard, mouse, and basic file navigation.
+
+**Compatible Hardware** – At least 2 GB RAM, 25 GB storage, and a 64-bit processor.
+
+**Bootable USB or DVD** – To install Ubuntu, you'll need a USB drive (4 GB or more) or DVD with the Ubuntu ISO image.
+
+**Internet Connection** –  Needed for downloading updates, drivers, and software packages on a Ubuntu/Linux system.
 
 ---
 
-## Key Features of Ubuntu
+## Installing Ubuntu
 
-- **Component-Based Architecture:** UI is divided into independent, reusable components.
-- **Virtual DOM:** Improves performance by minimizing direct manipulation of the real DOM.
-- **Declarative Syntax:** Developers describe what the UI should look like for any state, and React takes care of updating the UI.
-- **Unidirectional Data Flow:** Data flows in a single direction, making the app easier to understand and debug.
-- **JSX (JavaScript XML):** A syntax extension that allows writing HTML-like code within JavaScript files.
-- **Rich Ecosystem:** Integrates with tools like Redux for state management, React Router for navigation, and more.
-- **Strong Developer Tools:** Includes React Developer Tools for debugging and inspection.
-- **Server-Side Rendering (SSR):** Supports rendering on the server for faster load times and SEO benefits.
-- **React Native:** Enables building mobile apps using the same React concepts.
+1. **Download ISO**
 
----
+   - Go to https://ubuntu.com/download.
+   - Choose Ubuntu Desktop or Server (LTS) version.
 
-## Getting Started
+3. **Create Bootable USB**
 
-1. **Installation**
-   - Using `create-react-app`:
-     ```bash
-     npx create-react-app my-app
-     cd my-app
-     npm start
+   - On Linux: Use dd command.
      ```
-   - Or add React to an existing project:
-     ```bash
-     npm install react react-dom
+     sudo dd if=ubuntu.iso of=/dev/sdX bs=4M status=progress
      ```
-
-2. **Basic Example**
-   ```jsx
-   import React from 'react';
-
-   function App() {
-     return (
-       <div>
-         <h1>Hello, React!</h1>
-       </div>
-     );
-   }
-
-   export default App;
-   ```
-
+     
+4. **Boot from USB**
+      - Plug USB in and restart PC.
+      - Press boot key (F2/F12/ESC/DEL depending on your computer brand).
+      - Select USB to boot.
+        
+5. **Install Ubuntu**
+      - Select language and keyboard layout.
+      - Choose: “Erase disk and install Ubuntu”.
+      - and than Create user, password and time zone.
+      - Start installation.
+      - After completing the installation step then reboot the system.
+      - Done
+ 
 ---
 
-## Basic Concepts
-
-- **Components:** The building blocks of React applications. Can be functional or class-based.
-- **Props:** Inputs to components for passing data.
-- **State:** Local data managed within components.
-- **Lifecycle Methods:** Special methods for managing component behavior over its lifetime.
-- **Event Handling:** Responding to user inputs and actions.
-- **Conditional Rendering:** Showing UI elements based on certain conditions.
-- **Lists and Keys:** Rendering collections of data efficiently.
-
----
 
 ## Conclusion
 
-React.js is a robust and efficient library for building modern web interfaces. Its component-based approach, performance optimizations, and strong ecosystem make it a top choice for developers.
+Ubuntu is a free and user-friendly operating system based on Linux. It offers a simple interface, regular updates, and a large collection of software, making it great for both beginners and advanced users. With different versions for desktops, servers, and even IoT devices, Ubuntu supports a strong open-source community and continues to grow with new features and support.
 
 ---
 
 ## Author
 
-- **Name:** Sachin Kumar
-- **Email:** chaudhary2000sachin@gmail.com
+- **Name:** Sunny Kumar
+- **Email:** sunny.kumar.snaatak@mygurukulam.co
 
 ---
 
 ## References
 
-- [React Official Documentation](https://react.dev/)
-- [React GitHub Repository](https://github.com/facebook/react)
-- [Create React App](https://create-react-app.dev/)
-- [React Tutorial](https://react.dev/learn)
+- [Ubuntu Official Documentation](https://documentation.ubuntu.com/core/)
+- [Installing Ubuntu](https://ubuntu.com/download/desktop)
+
