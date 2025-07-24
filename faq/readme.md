@@ -1,0 +1,12 @@
+| **Question**                                                 | **Answer**                                                                                                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Q1. What is Ubuntu?**                                      | Ubuntu is a free and open-source Linux-based operating system developed by Canonical Ltd., known for its ease of use, security, and reliability. |
+| **Q2. Is Ubuntu free to use?**                               | Yes, Ubuntu is completely free to download, install, and use. It is also open-source, so its source code is freely available.                    |
+| **Q3. What are the key package management tools in Ubuntu?** | Ubuntu uses `APT` for `.deb` packages and `Snap` for containerized software packages.                                                            |
+| **Q4. How do I update software in Ubuntu?**                  | You can update using `sudo apt update && sudo apt upgrade` for APT or `sudo snap refresh` for Snap packages.                                     |
+| **Q5. What is systemd in Ubuntu?**                           | `systemd` is Ubuntu’s default init system responsible for managing services and system boot processes.                                           |
+| **Q6. Can I use Ubuntu for development?**                    | Yes, Ubuntu is highly preferred for development with built-in support for tools like Python, Java, Git, etc.                                     |
+| **Q7. Is Ubuntu good for beginners?**                        | Yes, Ubuntu has a clean interface (GNOME), a large support community, and is beginner-friendly.                                                  |
+| **Q8. What are Snap packages?**                              | Snap packages are self-contained applications that include all dependencies, managed via the `snap` command.                                     |
+| **Q9. How is Ubuntu used in the cloud?**                     | Ubuntu is widely used in cloud platforms like AWS, GCP, and Azure. It's often the base OS for running DevOps tools.                              |
+| **Q10. What are some limitations of Ubuntu?**                | Ubuntu lacks native support for some commercial software, may require terminal usage, and Snap apps can be slow.                                 |
